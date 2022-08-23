@@ -7,6 +7,7 @@
 
 body {
     margin: 0;
+    font: 20px/1.2 "Roboto", sans-serif;
 }
 
 #header {
@@ -17,41 +18,37 @@ body {
     right: 0;
     z-index: 999;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    color: #ffffff;
+    font-size: 20px;
 }
 
-.top-container {
-    padding: 15px 85px;
+.container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    vertical-align: center;
+    align-items: center;
+    padding: 30px 60px;
+    max-height: 95px;
 }
 
-.logo {
-    width: 120px;
-    height: 78px; 
+.nav {
+    margin: 0 -60px 0 0;
 }
 
-.top-container ul {
+ul {
     display: flex;
     text-decoration: none;
 }
 
-.top-container li {
+li {
     list-style: none;
-    text-transform: uppercase;
-    margin-right: 24px;
+    margin: 0 62px 0px 0px;
+    padding: 4px 0 0 0;
 }
 
-.top-container a{
+a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-}
-
-.top-container a:hover{
-    color: rgb(228, 4, 4);
 }
 
 .banner-part {
@@ -91,25 +88,21 @@ body {
 .banner-content {
     position: relative;
     z-index: 999;
-    max-width: 600px;
+    max-width: 900px;
     color: #ffffff;
-    padding: 0 85px;
-    top: 60%;
+    padding: 0 180px;
+    top: 55%;
     font-family: 'Roboto', sans-serif;
 }
 
-.trending {
+.overline-text {
+    color: #ff0000;
     font-weight: bold;
-    color: rgb(4, 209, 89);
-}
-
-.banner-content p {
-    margin-bottom: 30px;
 }
 
 .btn {
     text-transform: capitalize;
-    color: #000;
+    color: #121212;
     text-decoration: none;
     text-align: center;
     display: inline-block;
@@ -118,71 +111,39 @@ body {
 
 .btn.primary {
     padding: 9px;
-    background-color: #333333;
+    background-color: #1c1c1c;
     color: #ffffff;
     border-radius: 22px;
     border: 1px solid #ffffff;
     min-width: 160px;
+    transition: all 0.3s ease-in;
 }
 
-/* //////////////////////////////// */
-.container {
-    max-width: 1170px;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
+.btn.primary:hover {
+    background-color: #e6e6e6;
+    color: #1c1c1c;
+    border: 1px solid #000000;
+    box-shadow: 0px 0px 10px 10px rgba(166,27,255,0.45);
+    -webkit-box-shadow: 0px 0px 10px 10px rgba(166,27,255,0.45);
+    -moz-box-shadow: 0px 0px 10px 10px rgba(166,27,255,0.45);
 }
 
-.container.lg {
-    max-width: 1310px;
+.btn.sign-in {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: -10px 0 0 0;
+    border-radius: 22px;
+    border: 1px solid #000000;
+    min-width: 84px;
+    transition: all 0.3s ease-in;
 }
 
-.four-columns{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.four-columns .col {
-    width: auto;
-    flex: 1;
-    margin: 10px;
-}
-
-.book-image {
-    height:250px;
-    position: relative;
-    /* display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;  */
-
-}
-.book-detail {
-    border-radius: 13px;
-    overflow: hidden;
-    font-family: 'Poppins', sans-serif;
-    border: 2px solid black;
-}  
-h2 {
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    font-size: 35px;
-    line-height: 2;
-    font-weight: 700;
-    color: #010304;
-}
-h3 {
-    font-size: 25px;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin: 10px;
-}
-
-.button-wrap{
-    margin-bottom: 10px;
-} 
-.book-image ,img{
-object-fit: cover;
-    height: 100%;
-  
+.btn.sign-in:hover {
+    background-color: #e6e6e6;
+    color: #1c1c1c;
+    border: 1px solid #000000;
+    box-shadow: 0px 0px 10px 10px rgba(166,27,255,0.45);
+    -webkit-box-shadow: 0px 0px 10px 10px rgba(166,27,255,0.45);
+    -moz-box-shadow: 0px 0px 10px 10px rgba(166,27,255,0.45);
 }
