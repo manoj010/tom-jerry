@@ -11,7 +11,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(./assets/loginbk.jpg);
+    background-image: url(../images/loginbk.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
